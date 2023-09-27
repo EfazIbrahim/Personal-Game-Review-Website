@@ -1,7 +1,12 @@
 import { HStack } from "@chakra-ui/react";
+import ColorModeSwitch from "./ColorModeSwitch";
 
 const NavBar = () => {
-  return <HStack></HStack>;
+  return (
+    <HStack justifyContent="space-between" padding="10px">
+      <ColorModeSwitch></ColorModeSwitch>
+    </HStack>
+  );
 };
 
 export default NavBar;
